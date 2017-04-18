@@ -1,0 +1,265 @@
+$primary:#FF324C;
+$secondary: white;
+$github-primary: #333333;
+$github-secondary: #5A5454;
+$behance-primary: #008aea;
+$behance-secondary: #024dcf;
+$twitter-primary: #00aced;
+$twitter-secondary: #0084b4;
+
+body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    &.left {
+        float: left;
+    }
+    &.right {
+        float: right;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+.nav-pills .nav-item {
+    a {
+        margin-right: 1em;
+    }
+    p {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.header,
+.footer {
+    color: #818a91;
+}
+
+.header {
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #e5e5e5;
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 3rem;
+    }
+    code {
+        background: $primary;
+        color: $secondary;
+    }
+}
+
+.footer {
+    padding-top: 1.5rem;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 2rem 0;
+}
+
+.main {
+    margin-bottom: 2em;
+}
+
+.about-me {
+    margin-bottom: 2em;
+}
+
+.about-me-sections {
+    .btn-primary {
+        color: $secondary;
+        background-color: $primary;
+        border-color: $primary;
+        &:hover {
+            color: $primary;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+}
+
+.jumbotron {
+    text-align: center;
+    border-bottom: .05rem solid #e5e5e5;
+    background: $secondary;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($primary, $secondary);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($primary, $secondary);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($primary, $secondary);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient($primary, $secondary);
+    /* Standard syntax */
+    color: white;
+    a:hover {
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+}
+
+aside {
+    margin-top: 2em;
+}
+
+.twitter-view.card  {
+    box-shadow: none !important;
+}
+
+.projects {
+    padding-bottom: 1.5em;
+    a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        padding: 1.5em;
+        color: white;
+    }
+    .card {
+        padding: 1rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        .repo-info.card-text {
+            margin-left: .5em;
+        }
+        small .text-muted,
+        small.text-muted b {
+            color: grey;
+        }
+        i.fa.fa-star,
+        i.fa.fa-code-fork {
+            margin-right: .5rem;
+        }
+        i.fa.fa-code-fork {
+            margin-left: 1rem;
+        }
+        span.lang {
+            margin-left: 1rem;
+        }
+        button.btn.btn-primary-outline {
+            margin-bottom: 1em;
+            font-size: smaller;
+        }
+        p.card-text {
+            margin-top: 1em;
+        }
+    }
+}
+
+.github-view {
+    .jumbotron {
+        background: $github-secondary;
+        background: -webkit-linear-gradient($github-primary, $github-secondary);
+        background: -o-linear-gradient($github-primary, $github-secondary);
+        background: -moz-linear-gradient($github-primary, $github-secondary);
+        background: linear-gradient($github-primary, $github-secondary);
+    }
+    button.btn.btn-primary-outline {
+        border-color: $github-primary;
+        color: $github-primary;
+        &:hover {
+            border-color: $github-secondary;
+            background-color: $github-secondary;
+            color: white;
+        }
+    }
+    a:hover {
+        color: $github-secondary;
+    }
+}
+
+.behance-view {
+    .jumbotron {
+        background: $behance-secondary;
+        background: -webkit-linear-gradient($behance-primary, $behance-secondary);
+        background: -o-linear-gradient($behance-primary, $behance-secondary);
+        background: -moz-linear-gradient($behance-primary, $behance-secondary);
+        background: linear-gradient($behance-primary, $behance-secondary);
+    }
+    button.btn.btn-primary-outline {
+        border-color: $behance-primary;
+        color: $behance-primary;
+        &:hover {
+            border-color: $behance-secondary;
+            background-color: $behance-secondary;
+            color: white;
+        }
+    }
+    a:hover {
+        color: $behance-secondary;
+    }
+}
+
+.twitter-view {
+    .jumbotron {
+        background: $twitter-secondary;
+        background: -webkit-linear-gradient($twitter-primary, $twitter-secondary);
+        background: -o-linear-gradient($twitter-primary, $twitter-secondary);
+        background: -moz-linear-gradient($twitter-primary, $twitter-secondary);
+        background: linear-gradient($twitter-primary, $twitter-secondary);
+    }
+    button.btn.btn-primary-outline {
+        border-color: $twitter-primary;
+        color: $twitter-primary;
+        &:hover {
+            border-color: $twitter-secondary;
+            background-color: $twitter-secondary;
+            color: white;
+        }
+    }
+    a:hover {
+        color: $twitter-secondary;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .header,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header {
+        margin-bottom: 2rem;
+    }
+    .jumbotron {
+        border-bottom: 0;
+    }
+    .footer {
+        p {
+            float: none;
+        }
+    }
+}
+
+
+/** Facebook Button */
+
+.fb_iframe_widget {
+    display: flex !important;
+}
+
+li.nav-item.social {
+    margin-top: .1em;
+}
